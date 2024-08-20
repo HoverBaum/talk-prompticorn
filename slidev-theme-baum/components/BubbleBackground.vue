@@ -8,7 +8,6 @@ const primaryColor = getComputedStyle(
 const accentColor = getComputedStyle(document.documentElement).getPropertyValue(
   "--accent"
 );
-console.log("primaryColor", primaryColor);
 const surfaceColor = getComputedStyle(
   document.documentElement
 ).getPropertyValue("--surface");
@@ -23,7 +22,7 @@ const surfaceColor = getComputedStyle(
           value: background,
         },
       },
-      fpsLimit: 120,
+      fpsLimit: 60,
       particles: {
         number: {
           value: 600,
@@ -33,7 +32,7 @@ const surfaceColor = getComputedStyle(
           },
         },
         color: {
-          value: '#0073b9',
+          value: primaryColor,
         },
         shape: {
           type: 'circle',
@@ -46,9 +45,11 @@ const surfaceColor = getComputedStyle(
           },
         },
         opacity: {
-          value: 0.3472249623182,
-          random: true,
-          anim: {
+          value: {
+            min: 0.1,
+            max: 0.4,
+          },
+          animation: {
             enable: true,
             speed: 0.2,
             opacity_min: 0.1,
@@ -56,7 +57,10 @@ const surfaceColor = getComputedStyle(
           },
         },
         size: {
-          value: 10,
+          value: {
+            min: 8,
+            max: 10,
+          },
           random: true,
         },
         move: {
@@ -65,6 +69,7 @@ const surfaceColor = getComputedStyle(
           direction: 'top',
           random: false,
           straight: false,
+          speed: 1.5,
           out_mode: 'out',
           bounce: false,
         },

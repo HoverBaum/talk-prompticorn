@@ -1,34 +1,22 @@
 <script setup lang="ts">
-import { loadFull } from 'tsparticles'
-
-const particlesInit = async (engine) => {
-  await loadFull(engine)
-}
-
-const particlesLoaded = async (container) => {
-  console.log('Particles container loaded', container)
-}
-
 const background = getComputedStyle(document.documentElement).getPropertyValue(
-  '--background'
-)
+  "--background"
+);
 const primaryColor = getComputedStyle(
   document.documentElement
-).getPropertyValue('--primary')
+).getPropertyValue("--primary");
 const accentColor = getComputedStyle(document.documentElement).getPropertyValue(
-  '--accent'
-)
-console.log('primaryColor', primaryColor)
+  "--accent"
+);
+console.log("primaryColor", primaryColor);
 const surfaceColor = getComputedStyle(
   document.documentElement
-).getPropertyValue('--surface')
+).getPropertyValue("--surface");
 </script>
 
 <template>
-  <Particles
+  <vue-particles
     id="tsparticles"
-    :particlesInit="particlesInit"
-    :particlesLoaded="particlesLoaded"
     :options="{
       background: {
         color: {
@@ -91,8 +79,8 @@ const surfaceColor = getComputedStyle(
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
 }
 </style>

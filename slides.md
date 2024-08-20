@@ -13,7 +13,7 @@ drawings:
 layout: intro
 ---
 
-# <Emoji label="Castle">🏰</Emoji> Medieval Strategies for Cyber Security
+# <Emoji label="Unicorn">🦄</Emoji> The first Prompticorn
 
 by Hendrik Wallbaum
 
@@ -21,7 +21,7 @@ by Hendrik Wallbaum
 layout: simple-intro
 ---
 
-# <Emoji label="Castle">🏰</Emoji> Medieval Strategies for Cyber Security
+# <Emoji label="Unicorn">🦄</Emoji> The first Prompticorn
 
 by Hendrik Wallbaum
 

@@ -28,7 +28,7 @@ by Hendrik Wallbaum
 
 ---
 layout: speaker
-speakerImage: /assets/speaker-2.jpg
+speakerImage: /assets/speaker.png
 ---
 
 # Hendrik Wallbaum

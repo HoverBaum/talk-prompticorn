@@ -4,34 +4,24 @@
  */
 
 const emit = defineEmits<{
-  (e: "useFallback"): void;
-}>();
+  (e: 'useFallback'): void
+}>()
 
 const props = defineProps<{
   /**
    * The windows title.
    */
-  title: string;
-}>();
+  title: string
+}>()
 
 function onFallbackClick() {
-  emit("useFallback");
+  emit('useFallback')
 }
 </script>
 
 <template>
   <div
-    class="
-      apple-window
-      baum-window
-      console
-      text-xs
-      relative
-      object-cover
-      z-10
-      flex-grow
-      pt-6
-    "
+    class="apple-window baum-window console text-xs relative object-cover z-10 pt-6 flex flex-col"
     style="background-color: var(--surface); max-height: 100%"
   >
     <div
@@ -48,20 +38,14 @@ function onFallbackClick() {
         ></li>
       </ul>
       <div
-        class="
-          absolute
-          top-1
-          z--1
-          flex flex-row
-          w-full
-          justify-center
-          items-center
-        "
+        class="absolute top-1 z--1 flex flex-row w-full justify-center items-center"
       >
         <span class="inline-block">{{ props.title }}</span>
       </div>
     </div>
-    <slot />
+    <div class="flex-grow">
+      <slot />
+    </div>
   </div>
 </template>
 

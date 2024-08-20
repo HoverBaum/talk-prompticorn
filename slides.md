@@ -35,98 +35,134 @@ speakerImage: /assets/speaker-2.jpg
 
 Developer for fun
 
-Castle Enthusiast
-
-Consultant @Netlight
-
-
+GenAi Enthusiast
 
 ---
-layout: image
-image: /assets/carcassonne.jpg
+layout: iframe
+url: http://prompticorn.edgez.live/
 ---
 
-# Carcassonne
+<!-- 
+Display Gallery of Prompticorn.
+-->
 
 ---
-layout: image-left
-image: /assets/hoardings.jpg
+layout: iframe-left
+url: http://prompticorn.edgez.live/
 ---
 
-# Hoardings
+# Prompticorn
 
 <v-clicks>
 
-- Extra Galleries for sieges
-- Ready made response
-- <Emoji>✨</Emoji> Disaster Response Plan
+1. Suggest an image prompt
+2. Get feedback
+3. Iterate
+4. Get approved by Prompticorn
+5. Create your image <Emoji>🎉</Emoji>
 
 </v-clicks>
 
 ---
-layout: image-left
-image: /assets/walls.jpg
+layout: image-right
+image: /assets/p-chat.png
 ---
 
-# Walls 
+# Prompticorn
 
-<v-clicks>
-
-- Palisades defended against swords
-- Cannons needed adaptation
-- <Emoji>✨</Emoji> Continuous Improvement
-
-</v-clicks>
+1. Suggest an image prompt
 
 ---
-layout: image-left
-image: /assets/doorway.jpg
+layout: image-right
+image: /assets/p-chat.png
 ---
 
-# Gates
+# Prompticorn
 
-<v-clicks>
-
-- Porters at the gate
-- Doorwards at inner doors
-- <Emoji>✨</Emoji> Zero Trust
-
-</v-clicks>
+1. Suggest an image prompt
+2. Get feedback
 
 ---
-layout: image-left
-image: /assets/chest.jpg
+layout: image-right
+image: /assets/p-chat.png
 ---
 
-# Locks
+# Prompticorn
 
-<v-clicks>
-
-
-- Defend valuables
-- Multiple locks created trust
-- <Emoji>✨</Emoji> Multi-Factor Authentication (MFA)
-
-</v-clicks>
-
+1. Suggest an image prompt
+2. Get feedback
+3. Iterate
 
 ---
-layout: statement
-emoji: ✨
+layout: image-right
+image: /assets/p-chat.png
 ---
 
-<v-click>
+# Prompticorn
 
-# We are all in this together!
+1. Suggest an image prompt
+2. Get feedback
+3. Iterate
+4. Get approved by Prompticorn
 
-</v-click>
+---
+layout: image-right
+image: /assets/p-chat.png
+---
+
+# Prompticorn
+
+1. Suggest an image prompt
+2. Get feedback
+3. Iterate
+4. Get approved by Prompticorn
+5. Create your image <Emoji>🎉</Emoji>
+
+---
+
+# Technologies
+
+- React
+- Next
+- Vercels ai package
+- DALL-E 3
+- ChatGPT 4o-mini
+
+---
+
+# Code for using ai package
+
+- Showcase frontend and backend
+
+---
+
+# Ai flow
+
+- Verify prompt first
+
+---
+
+# Ai Taking over UI
+
+- We used markers
+- Function calling way to cumbersome and imprecise
+
+---
+
+# Ai Response and code example
+
+---
+
+# Ideas
+
+- C4 of the entire system with database
 
 ---
 layout: image-left
 image: /assets/qr.png
 ---
 
-# Reach out
+# The End <Emoji>🏁</Emoji>
 
 <a href="https://hendrikwallbaum.de">hendrikwallbaum.de</a>
 

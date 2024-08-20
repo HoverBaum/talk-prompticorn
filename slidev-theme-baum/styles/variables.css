@@ -1,0 +1,84 @@
+/* 
+  Generated using: https://theme.wallbaum.dev/?color=%23378acd
+*/
+
+* {
+  /* Light colors */
+  --primary-light: #378acd;
+  --text-light: #364149;
+  --accent-light: #cd7e37;
+  --background-light: #f6fafd;
+  --surface-light: #edf5fb;
+  --border-light: 1px solid #b6bdc226;
+
+  /* Dark colors */
+  --primary-dark: #0073b9;
+  --text-dark: #d3dadf;
+  --accent-dark: #b94c00;
+  --background-dark: #171a1c;
+  --surface-dark: #22272a;
+  --border-dark: 1px solid #b7bcbf26;
+}
+
+:root {
+  color-scheme: light;
+
+  --primary: var(--primary-light);
+  --text: var(--text-light);
+  --accent: var(--accent-light);
+  --background: var(--background-light);
+  --surface: var(--surface-light);
+  --border: var(--border-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --primary: var(--primary-dark);
+    --text: var(--text-dark);
+    --accent: var(--accent-dark);
+    --background: var(--background-dark);
+    --surface: var(--surface-dark);
+    --border: var(--border-dark);
+  }
+}
+
+[color-scheme='light'] {
+  color-scheme: light;
+
+  --primary: var(--primary-light);
+  --text: var(--text-light);
+  --accent: var(--accent-light);
+  --background: var(--background-light);
+  --surface: var(--surface-light);
+  --border: var(--border-light);
+}
+
+[color-scheme='dark'] {
+  color-scheme: dark;
+
+  --primary: var(--primary-dark);
+  --text: var(--text-dark);
+  --accent: var(--accent-dark);
+  --background: var(--background-dark);
+  --surface: var(--surface-dark);
+  --border: var(--border-dark);
+}
+
+html.dark {
+  --primary: var(--primary-dark);
+  --text: var(--text-dark);
+  --accent: var(--accent-dark);
+  --background: var(--background-dark);
+  --surface: var(--surface-dark);
+  --border: var(--border-dark);
+}
+
+/*
+  Override some slidev variables.
+*/
+
+:root {
+  --slidev-theme-primary: var(--primary);
+}

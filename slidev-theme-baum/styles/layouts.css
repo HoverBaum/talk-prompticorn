@@ -1,0 +1,123 @@
+/*
+  This files serves as a central place for non-scoped css.
+  Especially needed for layout trying to style children they expect.
+*/
+
+/*
+  Adjust images for dark mode.
+*/
+
+html.dark {
+  --image-filter: saturate(0.9);
+}
+
+html.dark .baum-image-left .baum-image-left_image {
+  filter: var(--image-filter);
+}
+
+html.dark img {
+  filter: var(--image-filter);
+}
+
+/*
+  layout: image-display
+*/
+
+.slidev-layout.image-display {
+  img {
+    border: var(--border);
+    box-shadow: var(--shadow);
+  }
+
+  & .image-display_image__light {
+    display: block;
+  }
+
+  & .image-display_image {
+    display: none;
+  }
+}
+
+html.dark .slidev-layout.image-display {
+  & .image-display_image {
+    display: block;
+  }
+
+  & .image-display_image__light {
+    display: none;
+  }
+}
+
+/*
+  Title
+*/
+
+.baum-intro {
+  @apply h-full flex flex-col justify-center;
+}
+
+.baum-title {
+  h1 {
+    @apply text-6xl;
+    border-bottom: 1px solid var(--primary);
+    text-align: start;
+    margin-bottom: 0;
+  }
+
+  h1 + p {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--primary);
+    margin-bottom: 0;
+  }
+}
+
+.baum-simple-intro hgroup {
+  /* Frosted glass has a 0.5rem padding. */
+  padding: 0.5rem;
+}
+
+.baum-section {
+  @apply h-full flex flex-col justify-center;
+}
+
+/**
+  Statement
+*/
+
+.baum-statement {
+  @apply h-full flex flex-col justify-center text-center;
+
+  & .baum-statement_emoji {
+    font-family: 'NotoEmoji', sans-serif;
+    color: var(--primary);
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 16rem;
+    z-index: -1;
+    opacity: 0.33;
+  }
+
+  h1 {
+    @apply text-6xl;
+  }
+}
+
+/**
+  Questions
+*/
+
+.baum-questions {
+  @apply h-full flex flex-col justify-center text-center;
+
+  h1 {
+    @apply text-6xl;
+  }
+
+  p {
+    @apply text-3xl;
+  }
+}

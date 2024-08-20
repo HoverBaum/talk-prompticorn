@@ -10,4 +10,6 @@ export default defineAppSetup(({ app }) => {
       // await loadSlim(engine) // or you can load the slim version from "@tsparticles/slim" if don't need Shapes or Animations
     },
   })
+  // Somehow without this console.log the particles won't load…
+  console.log('Particles Setup fix 🤔')
 })

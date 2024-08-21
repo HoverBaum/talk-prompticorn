@@ -3,7 +3,7 @@
 
   pre,
   code {
-    @apply select-text;
+    @apply select-text my-4;
   }
 
   h1 {
@@ -51,7 +51,7 @@
   }
 
   blockquote {
-    @apply text-sm px-2 py-1 bg-$prism-background text-$prism-foreground border-$slidev-theme-primary border-l rounded;
+    @apply text-sm px-2 py-1 my-4 bg-$prism-background text-$prism-foreground border-$slidev-theme-primary border-l rounded;
   }
 
   blockquote > * {
@@ -87,5 +87,15 @@
   kbd {
     @apply border border-gray-400 border-b-2 border-opacity-20 rounded;
     @apply bg-gray-400 bg-opacity-5 py-0.5 px-1 text-xs font-mono;
+  }
+
+  .themed-svg {
+    text {
+      @apply fill-$text;
+    }
+
+    path {
+      @apply stroke-$text;
+    }
   }
 }

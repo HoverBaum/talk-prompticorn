@@ -59,7 +59,7 @@ const surfaceColor = getComputedStyle(
         size: {
           value: {
             min: 8,
-            max: 10,
+            max: 12,
           },
           random: true,
         },

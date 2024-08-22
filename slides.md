@@ -180,6 +180,7 @@ Whimsical, watercolors illustration of a human handing over control sticks to a 
 <v-click>
 
 > a purple unicorn
+
 </v-click>
 
 <v-click>
@@ -195,6 +196,7 @@ Try adding these elements to your prompt and watch the magic unfold! 🪄
 
 {{NEEDS_IMPROVEMENT}}
 ```
+
 </v-click>
 
 <v-clicks>

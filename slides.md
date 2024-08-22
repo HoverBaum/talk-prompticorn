@@ -177,13 +177,12 @@ Whimsical, watercolors illustration of a human handing over control sticks to a 
 
 # Example interaction
 
-<v-click>
+<!-- 
+  There is a bug with clicks that makes the code always be there on an initial load…
+  Thus, opting to have code be there by design :/
+-->
 
 > a purple unicorn
-
-</v-click>
-
-<v-click>
 
 ```txt {0|1|3-5|7|9|all}
 Your prompt is **acceptable** but could definitely use a bit of magic dust to make it truly enchanting! 🦄✨
@@ -197,11 +196,11 @@ Try adding these elements to your prompt and watch the magic unfold! 🪄
 {{NEEDS_IMPROVEMENT}}
 ```
 
-</v-click>
+<v-click>
 
-<v-clicks>
 <img class="max-h-12" alt="Refine Prompt button" src="/assets/keep-refining.png" />
-</v-clicks>
+
+</v-click>
 
 <!-- 
 Raw response:

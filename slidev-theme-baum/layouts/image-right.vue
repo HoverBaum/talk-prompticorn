@@ -57,6 +57,7 @@ watch(() => props.darkModeImage, updateBackgroundImage); // Update if the darkMo
       <div
         class="w-full h-full bg-cover baum-image-left_image rounded-lg"
         :style="{
+          backgroundColor: 'var(--surface)',
           backgroundImage: backgroundImage,
           backgroundPosition: 'center',
           border: 'var(--border)',

@@ -138,8 +138,7 @@ image: /assets/p-chat.png
 
 ---
 layout: image-right
-image: /assets/handover.png
-darkModeImage: /assets/handover-dark.png
+image: /assets/handover-transparent.png
 ---
 
 # Handing over UI
@@ -208,8 +207,11 @@ Your prompt is **acceptable** but could definitely use a bit of magic dust to ma
  -->
 
 ---
+layout: image-right
+image: /assets/techstack-transparent.png
+---
 
-# Technologies
+# TechStack
 
 - React
 - Next

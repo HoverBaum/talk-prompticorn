@@ -1,11 +1,10 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Talk :) 
 
-To start the slide show:
+## dark image
 
-- `npm install`
-- `npm run dev`
-- visit <http://localhost:3030>
+- Select color range with 10
+- Fill background with #22272a
 
-Edit the [slides.md](./slides.md) to see the changes.
+## transparent image
 
-Learn more about Slidev at the [documentation](https://sli.dev/).
+- Select color range with 20

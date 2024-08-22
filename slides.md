@@ -138,28 +138,28 @@ image: /assets/p-chat.png
 
 ---
 layout: image-right
-image: /assets/placeholder.jpg
+image: /assets/handover.png
 ---
 
 # Handing over UI
 
 <v-click>
 
-## 1. Markers
+### 1. Markers
 
 Special text in response that you parse to display UI.
 
 </v-click>
 <v-click>
 
-## 2. Function Calling
+### 2. Function Calling
 
 Specify functions ChatGPT can call to update your UI.
 
 </v-click>
 <v-click>
 
-## 3. Generating UI
+### 3. Generating UI
 
 GenAI return actual DOM strings to use.
 

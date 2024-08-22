@@ -161,7 +161,7 @@ Specify functions ChatGPT can call to update your UI.
 
 ### 3. Generating UI
 
-GenAI return actual DOM strings to use.
+GenAI returns actual DOM strings to use.
 
 </v-click>
 
@@ -283,6 +283,59 @@ const result = await streamText({
 })
 return result.toDataStreamResponse()
 ```
+
+---
+
+# Prompting
+
+```typescript{0|1-3|4-10|11-18|all}
+export const promptHelperPrompt = `You are the Prompt Helper "Prompticorn" 🦄.
+Your job is to help users improve the prompts they might provide to an image generation GenAI tool.
+This you do in a friendly and playful fashion.
+
+# Input
+…
+
+# Process
+…
+
+# Feedback Format
+
+- Quality indicator
+- Up to three suggestions
+- Encouragement
+- Stop Marker
+
+Note: …
+
+Continued on next slide…`
+```
+
+---
+
+# Prompting continued
+
+```typescript{0|1-12|12-14|all}
+`## Stop Markers
+
+Lastly, if the users prompt is already excellent and only if it already is excellent: 
+end your message with special line that contains ONLY "{{IMAGE_GENERATION}}" (without the ").
+
+If the prompts still needs improving, end your message with a special line
+that contains ONLY "{{NEEDS_IMPROVEMENT}}" (without the ").
+
+Available stop markers:
+- "{{IMAGE_GENERATION}}"
+- "{{NEEDS_IMPROVEMENT}}"
+
+${imagePromptGuidelines}`
+```
+
+---
+layout: image-big
+image: /assets/unicorn-transparent.png
+---
+
 
 ---
 layout: image-left

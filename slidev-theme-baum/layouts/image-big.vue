@@ -8,7 +8,7 @@
 
 <template>
   <div class="slidev-layout big-image">
-    <img :src="$attrs.image" />
+    <img :src="$attrs.image" class="bg-$surface" />
 
     <div>
       <slot />

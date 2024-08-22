@@ -139,6 +139,7 @@ image: /assets/p-chat.png
 ---
 layout: image-right
 image: /assets/handover.png
+darkModeImage: /assets/handover-dark.png
 ---
 
 # Handing over UI

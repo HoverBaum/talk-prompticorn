@@ -33,9 +33,9 @@ speakerImage: /assets/speaker.png
 
 # Hendrik Wallbaum
 
-Developer for fun
+Developer for fun <Emoji>🧑‍💻</Emoji>
 
-GenAi Enthusiast
+GenAi Enthusiast <Emoji>🤖</Emoji>
 
 ---
 layout: iframe
@@ -126,7 +126,7 @@ image: /assets/p-chat.png
 
 ---
 
-# Flows
+# Basic Flow
 
 <FlowDiagram />
 
@@ -213,23 +213,76 @@ image: /assets/techstack-transparent.png
 
 # TechStack
 
+<v-click>
+
 - React
 - Next
-- Vercels ai package
+- Vercels [ai-sdk](https://sdk.vercel.ai/)
 - DALL-E 3
 - ChatGPT 4o-mini
+</v-click>
 
 ---
 
-# Code for using ai package
+# useChat from ai/react
 
-- Showcase frontend and backend
+```typescript{0|5|5,8-13|5,15-18|all}
+'use client';
+import { useChat } from 'ai/react';
+
+export default function Page() {
+  const { messages, input, handleInputChange, handleSubmit } = useChat({});
+  return (
+    <>
+      {messages.map(message => (
+        <div key={message.id}>
+          {message.role === 'user' ? 'User: ' : 'AI: '}
+          {message.content}
+        </div>
+      ))}
+
+      <form onSubmit={handleSubmit}>
+        <input name="prompt" value={input} onChange={handleInputChange} />
+        <button type="submit">Submit</button>
+      </form>
+    </>
+  );
+}
+```
+
+<!-- 
+This is somewhat legacy reasoned. When we started, the rsc parts of ai where not yet available.
+
+Basic example at: https://sdk.vercel.ai/docs/ai-sdk-ui/chatbot
+ -->
 
 ---
 
-# Ideas
+# Backend
 
-- C4 of the entire system with database
+```typescript{0|1|3-7|9-15|17-21|all}
+const { messages } = await req.json()
+
+const allMessages: CoreMessage[] = [{
+    role: 'system',
+    content: promptHelperPrompt,
+  }, ...messages,
+]
+
+if (!isImagePrompt) {
+  allMessages.push({
+    role: 'system',
+    content:
+      'The last user message was not an image prompt. Kindly remind the user that you only accept image prompts 😊 Note: remember that you never help to write image prompts!',
+  })
+}
+
+const result = await streamText({
+  model: gpt4oMini,
+  messages: allMessages,
+})
+return result.toDataStreamResponse()
+```
 
 ---
 layout: image-left

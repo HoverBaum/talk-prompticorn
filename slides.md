@@ -39,7 +39,7 @@ GenAi Enthusiast <Emoji>🤖</Emoji>
 
 ---
 layout: iframe
-url: http://prompticorn.edgez.live/
+url: https://prompticorn.edgez.live/
 ---
 
 <!-- 
@@ -48,7 +48,7 @@ Display Gallery of Prompticorn.
 
 ---
 layout: iframe-left
-url: http://prompticorn.edgez.live/
+url: https://prompticorn.edgez.live/
 ---
 
 # Prompticorn

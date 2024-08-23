@@ -36,7 +36,10 @@ GenAi Enthusiast <Emoji>🤖</Emoji>
 ---
 layout: iframe
 url: https://prompticorn.edgez.live/
+fallbackImage: /assets/sleepy-transparent.png
 ---
+
+TODO: Put Gallery here!
 
 <!-- 
 Display Gallery of Prompticorn.

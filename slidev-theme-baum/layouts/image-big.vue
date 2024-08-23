@@ -10,7 +10,7 @@
   <div class="slidev-layout big-image">
     <img :src="$attrs.image" class="bg-$surface" />
 
-    <div>
+    <div class="mt-4">
       <slot />
     </div>
   </div>

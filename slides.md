@@ -259,6 +259,37 @@ Basic example at: https://sdk.vercel.ai/docs/ai-sdk-ui/chatbot
 
 ---
 
+# Marker Parsing
+
+```typescript{0|1,16|2-5|7-11,14-15|2-5,12-13|all}
+export const BotChatMessage = ({message, userPrompt}: ChatMessageProps) => {
+  const regexMarker = /{{.+?}}/gm.exec(message.content)
+  const marker: MarkerType | null = regexMarker
+    ? (regexMarker[0].replace('{{', '').replace('}}', '') as MarkerType)
+    : null
+
+  return (
+    <GenericChatMessage
+      message={message.content.replace(/^.*?{{.*$/gm, '')}
+      username="Prompticorn"
+    >
+      {marker === 'NEEDS_IMPROVEMENT' && ( … )}
+      {marker === 'IMAGE_GENERATION' && ( … )}
+    </GenericChatMessage>
+  )
+}
+```
+
+
+---
+layout: image-big
+image: /assets/unicorn-transparent.png
+---
+
+<!-- Resting point for transition to backend code -->
+
+---
+
 # Backend
 
 ```typescript{0|1|3-7|9-15|17-21|all}
@@ -331,11 +362,6 @@ Available stop markers:
 
 ${imagePromptGuidelines}`
 ```
-
----
-layout: image-big
-image: /assets/unicorn-transparent.png
----
 
 
 ---

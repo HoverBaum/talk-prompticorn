@@ -13,6 +13,7 @@
     <FrostedGlass>
       <Title>
         <slot />
+        <p class="mt-2">{{ $slidev.configs.author }}</p>
       </Title>
     </FrostedGlass>
   </div>

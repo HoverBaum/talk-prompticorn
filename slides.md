@@ -4,6 +4,7 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 class: text-center
 highlighter: shiki
 lineNumbers: false
+author: Hendrik Wallbaum
 info: |
   ## Medieval Strategies for Cyber Security.
 drawings:
@@ -15,16 +16,11 @@ layout: intro
 
 # <Emoji label="Unicorn">🦄</Emoji> The first Prompticorn
 
-by Hendrik Wallbaum
-
 ---
 layout: simple-intro
 ---
 
 # <Emoji label="Unicorn">🦄</Emoji> The first Prompticorn
-
-by Hendrik Wallbaum
-
 
 ---
 layout: speaker

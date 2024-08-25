@@ -65,7 +65,7 @@ fallbackImage: /assets/vertical-sleep-transparent.png
 
 ---
 layout: image-right
-image: /assets/p-chat.png
+image: /assets/interaction/01-prompt.png
 ---
 
 # Prompticorn

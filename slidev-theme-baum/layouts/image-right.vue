@@ -49,23 +49,25 @@ watch(() => props.darkModeImage, updateBackgroundImage) // Update if the darkMod
 </script>
 
 <template>
-  <div class="grid grid-cols-2 w-full h-full baum-image-left">
-    <div class="slidev-layout w-full">
-      <slot />
-    </div>
+  <div class="slidev-layout">
+    <div class="grid grid-cols-2 gap-4 w-full h-full baum-image-left">
+      <div class="w-full">
+        <slot />
+      </div>
 
-    <div class="p-4">
-      <div
-        class="w-full h-full bg-contain baum-image-left_image rounded-lg"
-        :style="{
-          backgroundColor: 'var(--surface)',
-          backgroundImage: backgroundImage,
-          backgroundPosition: 'center',
-          border: 'var(--border)',
-          boxShadow: 'var(--shadow)',
-          backgroundRepeat: 'no-repeat',
-        }"
-      ></div>
+      <div>
+        <div
+          class="w-full h-full bg-cover baum-image-left_image rounded-lg"
+          :style="{
+            backgroundColor: 'var(--surface)',
+            backgroundImage: backgroundImage,
+            backgroundPosition: 'center',
+            border: 'var(--border)',
+            boxShadow: 'var(--shadow)',
+            backgroundRepeat: 'no-repeat',
+          }"
+        ></div>
+      </div>
     </div>
   </div>
 </template>

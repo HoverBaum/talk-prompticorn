@@ -6,17 +6,16 @@
 
 <template>
   <div class="slidev-layout">
-    <div class="grid grid-cols-2 w-full h-full">
-      <div style="max-height: 100%; overflow: scroll">
+    <div class="grid gap-4 grid-cols-2 w-full h-full">
+      <div class="w-full">
+        <slot />
+      </div>
+      <div>
         <Browser
           :url="$attrs.url"
           :fallbackImage="$attrs.fallbackImage"
-          class="h-full w-80"
-          style="margin: 0 auto"
+          class="h-full w-full"
         />
-      </div>
-      <div class="w-full pl-10">
-        <slot />
       </div>
     </div>
   </div>

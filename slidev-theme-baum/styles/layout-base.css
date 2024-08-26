@@ -1,5 +1,5 @@
 .slidev-layout {
-  @apply px-10 py-8 text-[1.1rem] h-full;
+  @apply text-[1.1rem] h-full;
 
   pre,
   code {

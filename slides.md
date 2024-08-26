@@ -23,14 +23,6 @@ layout: simple-intro
 # <Emoji label="Unicorn">🦄</Emoji> The first Prompticorn
 
 ---
-layout: window
----
-
-# headline
-
-and some text
-
----
 layout: speaker
 speakerImage: /assets/speaker.png
 ---
@@ -56,7 +48,7 @@ Display Gallery of Prompticorn.
 -->
 
 ---
-layout: iframe-left
+layout: iframe-right
 url: https://prompticorn.edgez.live/
 fallbackImage: /assets/vertical-sleep-transparent.png
 ---

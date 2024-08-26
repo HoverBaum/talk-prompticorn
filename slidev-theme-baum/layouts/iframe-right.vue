@@ -6,11 +6,11 @@
 
 <template>
   <Slide>
-    <div class="grid gap-4 grid-cols-2 w-full h-full">
+    <div class="grid grid-cols-2 w-full h-full">
       <div class="w-full">
         <slot />
       </div>
-      <div>
+      <div class="ml-[2rem]">
         <Browser
           :url="$attrs.url"
           :fallbackImage="$attrs.fallbackImage"

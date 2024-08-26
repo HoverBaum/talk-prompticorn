@@ -68,6 +68,7 @@ fallbackImage: /assets/vertical-sleep-transparent.png
 ---
 layout: image-right
 image: /assets/interaction/01-prompt.png
+noCrop: true
 ---
 
 # Prompticorn
@@ -76,7 +77,8 @@ image: /assets/interaction/01-prompt.png
 
 ---
 layout: image-right
-image: /assets/p-chat.png
+image: /assets/interaction/02-feedback.png
+noCrop: true
 ---
 
 # Prompticorn
@@ -86,7 +88,8 @@ image: /assets/p-chat.png
 
 ---
 layout: image-right
-image: /assets/p-chat.png
+image: /assets/interaction/03-refine.png
+noCrop: true
 ---
 
 # Prompticorn
@@ -97,7 +100,8 @@ image: /assets/p-chat.png
 
 ---
 layout: image-right
-image: /assets/p-chat.png
+image: /assets/interaction/04-generation-ready.png
+noCrop: true
 ---
 
 # Prompticorn
@@ -109,7 +113,8 @@ image: /assets/p-chat.png
 
 ---
 layout: image-right
-image: /assets/p-chat.png
+image: /assets/interaction/05-generated.png
+noCrop: true
 ---
 
 # Prompticorn

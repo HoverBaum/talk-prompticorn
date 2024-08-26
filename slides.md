@@ -126,8 +126,24 @@ noCrop: true
 5. Create your image <Emoji>🎉</Emoji>
 
 ---
+layout: image-big
+image: /assets/dragon-knitting.png
+---
 
-# System overview
+<!-- That is how prompticorn works and in the end you get nice images.
+Along the way, people learn how to prompt better in a playful manner.
+
+next: how it works -->
+
+---
+layout: section
+---
+
+# System Overview
+
+---
+
+# Architecture
 
 <ContainerDiagram />
 
@@ -213,6 +229,12 @@ Try adding these elements to your prompt and watch the magic unfold! 🪄
 Raw response:
 Your prompt is **acceptable** but could definitely use a bit of magic dust to make it truly enchanting! 🦄✨\n\n1. **Add Visual Descriptors**: Describe the unicorn's appearance in more detail, like the color of its mane, tail, and any special features such as a glittery horn or sparkling eyes.\n2. **Set the Scene**: Where is this purple unicorn? In a mystical forest, atop a rainbow, or under a starry sky? Setting adds context and depth.\n3. **Include Mood and Style**: Indicate the atmosphere (whimsical, mysterious, serene) and any artistic style you prefer (cartoon, realistic, fantasy art).\n\nTry adding these elements to your prompt and watch the magic unfold! 🪄\n\n{{NEEDS_IMPROVEMENT}
  -->
+
+---
+layout: section
+---
+
+# Into the Tech
 
 ---
 layout: image-right

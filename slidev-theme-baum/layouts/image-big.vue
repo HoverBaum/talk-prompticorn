@@ -10,7 +10,7 @@
   <Slide class="big-image flex flex-col items-center justify-center">
     <img
       :src="$attrs.image"
-      class="bg-$surface max-h-[90%] rounded-md"
+      class="bg-$surface max-h-full rounded-md"
       style="box-shadow: var(--shadow); border: var(--border)"
     />
 

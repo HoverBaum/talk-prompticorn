@@ -6,9 +6,16 @@
 </script>
 
 <template>
-  <div class="slidev-layout baum-section">
-    <Title>
+  <Slide class="flex flex-col justify-center">
+    <!-- To match simple intro -->
+    <Title class="p-[0.5rem]">
       <slot />
     </Title>
-  </div>
+  </Slide>
 </template>
+
+<style scoped>
+:slotted(p) {
+  @apply mt-2;
+}
+</style>

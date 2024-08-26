@@ -1,15 +1,23 @@
 <script setup lang="ts">
 /**
  * Layout for a big, central statement.
- * Optionally takes an Emoji to be places in the background.
+ * Optionally takes an Emoji to be placed in the background.
  */
 </script>
 
 <template>
-  <div class="slidev-layout baum-statement">
-    <span class="baum-statement_emoji">{{ $attrs.emoji || "" }}</span>
-    <div class="baum-statement_content">
-      <slot />
-    </div>
-  </div>
+  <Slide class="flex flex-col justify-center text-center">
+    <Emoji
+      class="color-$primary absolute top-[40%] left-[70%] -translate-x-1/2 -translate-y-1/2 text-[16rem] opacity-30 z-[-1]"
+      >{{ $attrs.emoji || "" }}</Emoji
+    >
+
+    <slot />
+  </Slide>
 </template>
+
+<style scoped>
+:slotted(h1) {
+  @apply text-6xl;
+}
+</style>

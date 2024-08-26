@@ -8,7 +8,7 @@
 
 
 <template>
-  <div class="slidev-layout baum-intro">
+  <Slide class="h-full flex flex-col justify-center">
     <BubbleBackground />
     <FrostedGlass>
       <Title>
@@ -16,5 +16,5 @@
         <p class="mt-2">{{ $slidev.configs.author }}</p>
       </Title>
     </FrostedGlass>
-  </div>
+  </Slide>
 </template>

@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div class="slidev-layout">
+  <Slide>
     <div class="grid gap-4 grid-cols-2 w-full h-full">
       <div class="w-full">
         <slot />
@@ -18,5 +18,5 @@
         />
       </div>
     </div>
-  </div>
+  </Slide>
 </template>

@@ -6,13 +6,19 @@
 </script>
 
 <template>
-  <div class="slidev-layout baum-questions">
+  <Slide
+    class="baum-questions h-full flex flex-col justify-center text-center text-$accent"
+  >
     <slot />
-  </div>
+  </Slide>
 </template>
 
 <style scoped>
-.slidev-layout.baum-questions {
-  color: var(--accent);
+:slotted(h1) {
+  @apply text-6xl;
+}
+
+:slotted(p) {
+  @apply text-3xl;
 }
 </style>

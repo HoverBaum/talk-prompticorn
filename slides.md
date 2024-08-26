@@ -23,6 +23,14 @@ layout: simple-intro
 # <Emoji label="Unicorn">🦄</Emoji> The first Prompticorn
 
 ---
+layout: window
+---
+
+# headline
+
+and some text
+
+---
 layout: speaker
 speakerImage: /assets/speaker.png
 ---
@@ -32,6 +40,8 @@ speakerImage: /assets/speaker.png
 Developer for fun <Emoji>🧑‍💻</Emoji>
 
 GenAi Enthusiast <Emoji>🤖</Emoji>
+
+
 
 ---
 layout: iframe

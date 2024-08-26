@@ -4,52 +4,52 @@
  * This uses the image as a background and thus might crop it.
  */
 
-import { ref, onMounted, onBeforeUnmount, watch } from 'vue'
+import { ref, onMounted, onBeforeUnmount, watch } from "vue";
 
 // Define the props
 const props = defineProps<{
-  image: string
-  darkModeImage?: string // Optional prop for dark mode image
-  noCrop?: boolean // Optional prop to disable cropping
-}>()
+  image: string;
+  darkModeImage?: string; // Optional prop for dark mode image
+  noCrop?: boolean; // Optional prop to disable cropping
+}>();
 
 // Reactive reference to hold the background image URL
-const backgroundImage = ref(`url(${props.image})`)
+const backgroundImage = ref(`url(${props.image})`);
 
 const updateBackgroundImage = () => {
-  const isDarkMode = document.documentElement.classList.contains('dark')
+  const isDarkMode = document.documentElement.classList.contains("dark");
   backgroundImage.value = `url(${
     isDarkMode && props.darkModeImage ? props.darkModeImage : props.image
-  })`
-}
+  })`;
+};
 
 onMounted(() => {
   // Initial image setup
-  updateBackgroundImage()
+  updateBackgroundImage();
 
   // Set up a MutationObserver to watch for changes in the class attribute of the root HTML element
   const observer = new MutationObserver(() => {
-    updateBackgroundImage()
-  })
+    updateBackgroundImage();
+  });
 
   // Start observing the HTML element's class attribute
   observer.observe(document.documentElement, {
     attributes: true,
-    attributeFilter: ['class'],
-  })
+    attributeFilter: ["class"],
+  });
 
   // Clean up the observer when the component is unmounted
   onBeforeUnmount(() => {
-    observer.disconnect()
-  })
-})
+    observer.disconnect();
+  });
+});
 
-watch(() => props.image, updateBackgroundImage) // Update if the image prop changes
-watch(() => props.darkModeImage, updateBackgroundImage) // Update if the darkModeImage prop changes
+watch(() => props.image, updateBackgroundImage); // Update if the image prop changes
+watch(() => props.darkModeImage, updateBackgroundImage); // Update if the darkModeImage prop changes
 </script>
 
 <template>
-  <div class="slidev-layout">
+  <Slide>
     <div class="grid grid-cols-2 gap-4 w-full h-full baum-image-left">
       <div class="w-full">
         <slot />
@@ -69,5 +69,5 @@ watch(() => props.darkModeImage, updateBackgroundImage) // Update if the darkMod
         ></div>
       </div>
     </div>
-  </div>
+  </Slide>
 </template>

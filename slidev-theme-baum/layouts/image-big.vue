@@ -7,26 +7,15 @@
 </script>
 
 <template>
-  <div class="slidev-layout big-image">
-    <img :src="$attrs.image" class="bg-$surface" />
+  <Slide class="big-image flex flex-col items-center justify-center">
+    <img
+      :src="$attrs.image"
+      class="bg-$surface max-h-[90%] rounded-md"
+      style="box-shadow: var(--shadow); border: var(--border)"
+    />
 
     <div class="mt-4">
       <slot />
     </div>
-  </div>
+  </Slide>
 </template>
-
-<style scoped>
-.slidev-layout.big-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.slidev-layout.big-image img {
-  max-height: 90%;
-  box-shadow: var(--shadow);
-  border: var(--border);
-  @apply rounded-md;
-}
-</style>

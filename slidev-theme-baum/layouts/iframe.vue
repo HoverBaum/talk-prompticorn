@@ -5,11 +5,11 @@
 </script>
 
 <template>
-  <div class="slidev-layout">
+  <Slide>
     <Browser
       :url="$attrs.url"
       :fallbackImage="$attrs.fallbackImage"
       class="h-full"
     />
-  </div>
+  </Slide>
 </template>

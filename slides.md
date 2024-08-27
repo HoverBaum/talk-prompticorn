@@ -37,11 +37,9 @@ GenAi Enthusiast <Emoji>🤖</Emoji>
 
 ---
 layout: iframe
-url: https://prompticorn.edgez.live/
-fallbackImage: /assets/sleepy-transparent.png
+url: https://prompticorn.edgez.live/gallery?noqr=true
+fallbackImage: /assets/gallery.png
 ---
-
-TODO: Put Gallery here!
 
 <!-- 
 Display Gallery of Prompticorn.
@@ -168,26 +166,32 @@ image: /assets/handover-transparent.png
 
 <v-click>
 
-### 1. Markers
+### 1. Structured data
 
-Special text in response that you parse to display UI.
-
-</v-click>
-<v-click>
-
-### 2. Function Calling
-
-Specify functions ChatGPT can call to update your UI.
+GenAI responds with JSON.
 
 </v-click>
 <v-click>
 
-### 3. Generating UI
+### 2. Markers
+
+Special text in response.
+
+</v-click>
+<v-click>
+
+### 3. Function Calling
+
+Specify functions ChatGPT can call.
+
+</v-click>
+<v-click>
+
+### 4. Generating UI
 
 GenAI returns actual DOM strings to use.
 
 </v-click>
-
 
 <!--
 - We used markers

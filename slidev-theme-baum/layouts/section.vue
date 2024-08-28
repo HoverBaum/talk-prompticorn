@@ -3,13 +3,24 @@
  * Layout for a new section.
  * Visually follows the title slide.
  */
+
+import { defineProps } from "vue";
+
+// Define the props
+interface Props {
+  emoji?: string;
+}
+
+// Define the props with default values
+const props = defineProps<Props>();
 </script>
 
 <template>
-  <Slide class="flex flex-col justify-center">
+  <Slide class="flex flex-col justify-center bg-$surface">
     <Emoji
-      class="color-$primary absolute top-1/3 left-[80%] -translate-x-1/2 -translate-y-1/2 text-[12rem] opacity-30 z-[-1]"
-      >{{ $attrs.emoji || "" }}</Emoji
+      v-if="props.emoji"
+      class="color-$primary absolute top-1/3 left-[80%] -translate-x-1/2 -translate-y-1/2 text-[12rem] opacity-30"
+      >{{ props.emoji }}</Emoji
     >
 
     <!-- To match simple intro -->

@@ -33,7 +33,19 @@ Developer for fun <Emoji>🧑‍💻</Emoji>
 
 GenAi Enthusiast <Emoji>🤖</Emoji>
 
+---
+layout: image-big
+image: /assets/dragon-2022.png
+---
 
+A blue Dragon knitting 2022
+
+---
+layout: image-big
+image: /assets/dragon-2023.png
+---
+
+A blue Dragon knitting 2023
 
 ---
 layout: iframe

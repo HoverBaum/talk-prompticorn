@@ -8,3 +8,6 @@
 ## transparent image
 
 - Select color range with 20
+
+
+- style="zoom: 0.5" on iframes

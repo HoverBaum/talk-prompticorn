@@ -410,7 +410,7 @@ ${imagePromptGuidelines}`
 
 
 ---
-layout: image-left
+layout: image-right
 image: /assets/qr.png
 ---
 
@@ -418,4 +418,4 @@ image: /assets/qr.png
 
 <a href="https://hendrikwallbaum.de">hendrikwallbaum.de</a>
 
-<Emoji>⬅️</Emoji> Scan for LinkedIn
+Scan for LinkedIn <Emoji>➡️</Emoji>

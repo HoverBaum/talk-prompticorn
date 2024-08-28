@@ -3,13 +3,19 @@
  * Prominent and big display of an image.
  */
 
-// TODO: once we can update to a version with working context, use light image for light slides.
+import { defineProps } from "vue";
+
+interface Props {
+  image: string;
+}
+
+const props = defineProps<Props>();
 </script>
 
 <template>
   <Slide class="big-image flex flex-col items-center justify-center">
     <img
-      :src="$attrs.image"
+      :src="props.image"
       class="bg-$surface max-h-full rounded-md"
       style="box-shadow: var(--shadow); border: var(--border)"
     />

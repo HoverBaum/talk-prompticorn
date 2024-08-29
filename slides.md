@@ -51,6 +51,7 @@ A blue Dragon knitting 2023
 layout: iframe
 url: https://prompticorn.edgez.live/gallery?noqr=true
 fallbackImage: /assets/gallery.png
+browserZoom: 0.5
 ---
 
 <!-- 

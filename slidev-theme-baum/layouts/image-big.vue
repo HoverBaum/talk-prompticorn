@@ -13,10 +13,10 @@ const props = defineProps<Props>();
 </script>
 
 <template>
-  <Slide class="big-image flex flex-col items-center justify-center">
+  <Slide class="flex flex-col items-center jusitfy-center h-full border-box">
     <img
       :src="props.image"
-      class="bg-$surface max-h-full rounded-md"
+      class="bg-$surface max-h-full max-w-full rounded-md overflow-auto"
       style="box-shadow: var(--shadow); border: var(--border)"
     />
 

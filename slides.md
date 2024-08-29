@@ -62,6 +62,7 @@ Display Gallery of Prompticorn.
 layout: iframe-right
 url: https://prompticorn.edgez.live/
 fallbackImage: /assets/vertical-sleep-transparent.png
+browserZoom: 0.8
 ---
 
 # Prompticorn

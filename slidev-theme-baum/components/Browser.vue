@@ -1,6 +1,8 @@
 <script setup lang="ts">
 /**
  * Apple stlye browser window rendering an iframe.
+ * Requires a fallback Image.
+ * Displays fallbackImage if page can not be loaded.
  */
 
 import { ref } from "vue";
@@ -32,6 +34,14 @@ const usingFallback = ref(false);
 function displayFallback() {
   usingFallback.value = !usingFallback.value;
 }
+
+/**
+ * On initial load, check whether the src is reachable using fetch.
+ * If not: opt for fallback.
+ */
+fetch(props.url).catch(() => {
+  displayFallback();
+});
 </script>
 
 <template>

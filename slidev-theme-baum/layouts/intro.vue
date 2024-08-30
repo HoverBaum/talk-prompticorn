@@ -2,10 +2,9 @@
 /**
  * Intro layout, expecting to display at least one h1.
  * Internally uses Title component.
- * Add a bubble background on the first slide and only!
+ * Adds bubbles in the background, use only for first slide!
  */
 </script>
-
 
 <template>
   <Slide class="h-full flex flex-col justify-center">

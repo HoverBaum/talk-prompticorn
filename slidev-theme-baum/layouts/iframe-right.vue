@@ -19,7 +19,7 @@ const props = defineProps<{
       <div class="w-full">
         <slot />
       </div>
-      <div class="ml-[2rem]">
+      <div class="ml-[2rem] overflow-auto h-full">
         <Browser
           :url="$attrs.url"
           :fallbackImage="$attrs.fallbackImage"

@@ -21,7 +21,7 @@ function onFallbackClick() {
 
 <template>
   <div
-    class="apple-window baum-window console text-xs relative object-cover z-10 pt-6 flex flex-col bg-$surface max-h-full"
+    class="apple-window console text-xs relative z-10 pt-6 flex flex-col bg-$surface max-h-full"
   >
     <div
       class="absolute top-0 flex flex-row w-full px-3 py-2 border-b-1 dark:border-gray-600"

@@ -48,6 +48,13 @@ image: /assets/dragon-2023.png
 A blue Dragon knitting 2023
 
 ---
+layout: section
+---
+
+# Prompt matters
+
+
+---
 layout: iframe
 url: https://prompticorn.edgez.live/gallery?noqr=true
 fallbackImage: /assets/gallery.png
@@ -345,6 +352,22 @@ Available stop markers:
 ${imagePromptGuidelines}`
 ```
 
+---
+layout: image-right
+image: /assets/placeholder.jpg
+---
+
+# ai/react
+
+<v-click>
+
+- Backend communication
+- Loading state
+- Messages
+- Input state
+- Error recognition
+
+</v-click>
 
 ---
 

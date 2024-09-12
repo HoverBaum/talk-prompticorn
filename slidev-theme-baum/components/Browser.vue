@@ -39,7 +39,9 @@ function displayFallback() {
  * On initial load, check whether the src is reachable using fetch.
  * If not: opt for fallback.
  */
-fetch(props.url).catch(() => {
+fetch(props.url, {
+  mode: "no-cors",
+}).catch(() => {
   displayFallback();
 });
 </script>

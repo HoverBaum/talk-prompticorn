@@ -38,14 +38,14 @@ layout: image-big
 image: /assets/dragon-2022.png
 ---
 
-A blue Dragon knitting 2022
+A blue Dragon knitting - 2022
 
 ---
 layout: image-big
 image: /assets/dragon-2023.png
 ---
 
-A blue Dragon knitting 2023
+A blue Dragon knitting - 2023
 
 ---
 layout: section
@@ -373,7 +373,7 @@ image: /assets/placeholder.jpg
 
 # useChat from ai/react
 
-```typescript{0|5|5,8-13|5,15-18|all}
+```typescript{0|1-2|5|5,8-13|5,15-18|all}
 'use client';
 import { useChat } from 'ai/react';
 

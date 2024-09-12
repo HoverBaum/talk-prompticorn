@@ -56,7 +56,7 @@ layout: section
 
 ---
 layout: iframe
-url: https://prompticorn.edgez.live/gallery?noqr=true
+url: https://prompticorn.edgez.live/gallery/4wzrp1xs0rak340r43pqtea2rrhzn82x?noqr=true
 fallbackImage: /assets/gallery.png
 browserZoom: 0.5
 ---
@@ -67,7 +67,7 @@ Display Gallery of Prompticorn.
 
 ---
 layout: iframe-right
-url: https://prompticorn.edgez.live/
+url: https://prompticorn.edgez.live/4wzrp1xs0rak340r43pqtea2rrhzn82x
 fallbackImage: /assets/vertical-sleep-transparent.png
 browserZoom: 0.8
 ---
@@ -158,7 +158,7 @@ next: how it works -->
 layout: section
 ---
 
-# System Overview
+# Into Tech
 
 ---
 
@@ -177,6 +177,34 @@ layout: section
 - Then create corresponding response
 - Mention that AI decides what happens next, not yet how
  -->
+
+---
+
+# Backend
+
+```typescript{0|1|3-7|9-15|17-21|all}
+const { messages } = await req.json()
+
+const allMessages: CoreMessage[] = [{
+    role: 'system',
+    content: promptHelperPrompt,
+  }, ...messages,
+]
+
+if (!isImagePrompt) {
+  allMessages.push({
+    role: 'system',
+    content:
+      'The last user message was not an image prompt. Kindly remind the user that you only accept image prompts 😊 Note: remember that you never help to write image prompts!',
+  })
+}
+
+const result = await streamText({
+  model: gpt4oMini,
+  messages: allMessages,
+})
+return result.toDataStreamResponse()
+```
 
 ---
 layout: image-right
@@ -256,56 +284,6 @@ Your prompt is **acceptable** but could definitely use a bit of magic dust to ma
  -->
 
 ---
-layout: section
----
-
-# Into the Tech
-
----
-layout: image-right
-image: /assets/techstack-transparent.png
----
-
-# TechStack
-
-<v-click>
-
-- React
-- Next
-- Vercels [ai-sdk](https://sdk.vercel.ai/)
-- DALL-E 3
-- ChatGPT 4o-mini
-</v-click>
-
----
-
-# Backend
-
-```typescript{0|1|3-7|9-15|17-21|all}
-const { messages } = await req.json()
-
-const allMessages: CoreMessage[] = [{
-    role: 'system',
-    content: promptHelperPrompt,
-  }, ...messages,
-]
-
-if (!isImagePrompt) {
-  allMessages.push({
-    role: 'system',
-    content:
-      'The last user message was not an image prompt. Kindly remind the user that you only accept image prompts 😊 Note: remember that you never help to write image prompts!',
-  })
-}
-
-const result = await streamText({
-  model: gpt4oMini,
-  messages: allMessages,
-})
-return result.toDataStreamResponse()
-```
-
----
 
 # Prompting
 
@@ -353,8 +331,14 @@ ${imagePromptGuidelines}`
 ```
 
 ---
+layout: section
+---
+
+# Frontend
+
+---
 layout: image-right
-image: /assets/placeholder.jpg
+image: /assets/techstack-transparent.png
 ---
 
 # ai/react
